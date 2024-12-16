@@ -307,10 +307,3 @@ tail -f logs/app.log
 ## 许可证
 
 本项目采用 MIT 许可证。
-=======
-
-# VideoPreTranscodingForJellyfinOnLinux
-
-使用linux服务器为Jellyfin视频离线转码
-
->>>>>>> 066a470ccfdf12bfdc3c59390a6fa17908ad2cb8
