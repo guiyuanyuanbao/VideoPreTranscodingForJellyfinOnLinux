@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+pydantic
+aiofiles
+python-multipart
+ffmpeg-python
+jinja2
+

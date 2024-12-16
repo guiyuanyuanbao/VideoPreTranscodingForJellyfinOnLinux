@@ -1,0 +1,71 @@
+<!-- app/static/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频转码服务</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>视频转码服务</h1>
+
+    <section>
+        <h2>上传文件</h2>
+        <input type="file" id="fileInput" multiple>
+        <button onclick="uploadFiles()">上传</button>
+        <!-- 上传进度条 -->
+        <div id="uploadProgressContainer" style="display:none; width: 100%; background-color: #f3f3f3; border: 1px solid #ccc; margin-top: 10px;">
+            <div id="uploadProgress" style="width: 0%; height: 20px; background-color: #4caf50; text-align: center; color: white;"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>任务列表</h2>
+        <table id="tasksTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>文件名</th>
+                    <th>状态</th>
+                    <th>进度</th>
+                    <th>操作</th>
+                    <th>详细信息</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 任务列表将动态填充 -->
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>文件管理</h2>
+        <div>
+            <h3>上传的文件</h3>
+            <ul id="uploadFilesList">
+                <!-- 上传文件列表 -->
+            </ul>
+        </div>
+        <div>
+            <h3>转码后的文件</h3>
+            <ul id="outputFilesList">
+                <!-- 转码后文件列表 -->
+            </ul>
+        </div>
+        <div>
+            <h3>打包的ZIP文件</h3>
+            <ul id="zipFilesList">
+                <!-- ZIP文件列表 -->
+            </ul>
+            <button onclick="downloadZip()">下载所有ZIP文件</button>
+        </div>
+        <!-- 清空所有文件和任务记录按钮 -->
+        <div style="margin-top: 20px;">
+            <button onclick="clearAll()">清空所有文件和任务记录</button>
+        </div>
+    </section>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
+
