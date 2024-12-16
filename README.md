@@ -1,0 +1,2 @@
+# VideoPreTranscodingForJellyfinOnLinux
+使用linux服务器为Jellyfin视频离线转码
